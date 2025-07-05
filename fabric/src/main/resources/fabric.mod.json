@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "zako",
+  "version": "${version}",
+  "name": "Zako",
+  "description": "ざぁ〜こ♥､ざぁ〜こ♥｡",
+  "authors": [
+    "Gizmo"
+  ],
+  "contact": {
+    "homepage": "https://github.com/gizmo-ds/zako-mod",
+    "sources": "https://github.com/gizmo-ds/zako-mod",
+    "issues": "https://github.com/gizmo-ds/zako-mod/issues"
+  },
+  "license": "EPL-2.0",
+  "icon": "assets/zako/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.aika.zako.fabric.ZakoFabric"
+    ],
+    "client": [
+      "dev.aika.zako.fabric.client.ZakoFabricClient"
+    ]
+  },
+  "mixins": [
+    "zako-common.mixins.json",
+    "zako.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.7",
+    "minecraft": "~1.21-",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

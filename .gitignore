@@ -120,3 +120,7 @@ runs/
 !gradle-wrapper.jar
 
 tmp/
+.architectury-transformer/
+*/logs/*.log
+*/logs/*.log.gz
+.env

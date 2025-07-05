@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+issueTrackerURL = "https://github.com/gizmo-ds/zako-mod/issues"
+license = "EPL-2.0"
+
+[[mods]]
+modId = "zako"
+version = "${version}"
+displayName = "Zako"
+displayURL = "https://github.com/gizmo-ds/zako-mod"
+authors = "Gizmo"
+description = '''
+ざぁ〜こ♥､ざぁ〜こ♥｡
+'''
+logoFile = "zako-logo.png"
+
+[[dependencies.zako]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.zako]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "zako.mixins.json"
+
+[[mixins]]
+config = "zako-common.mixins.json"
